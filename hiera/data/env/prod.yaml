@@ -55,6 +55,8 @@ ceph::radosgw::rgw_cors_allowed_origin: "https://console.jiocloudservices.com, h
 ceph::radosgw::rgw_keystone_sign_api: "sign-auth"
 ceph::radosgw::rgw_keystone_token_api: "token-auth"
 ceph::radosgw::rgw_multipart_part_upload_limit: 2048 # 2048 parts * 5Gb per part = 10 Tb max object size
+ceph::radosgw::rgw_kms_encrypt_url: "https://10.140.208.235:8443/encrypt"
+ceph::radosgw::rgw_kms_decrypt_url: "https://10.140.208.235:8443/decrypt"
 ## OSD Config
 ceph::conf::debug_osd: 5
 ceph::conf::osd_op_threads: 4
@@ -177,7 +179,7 @@ rjil::system::apt::repositories:
       =pMQK
       -----END PGP PUBLIC KEY BLOCK-----
   dss-ceph:
-    location: 'http://10.140.221.229/snapshots/c603eba3-aadd-44da-8081-2ed3716c342b/10.140.221.229/apt/JcsDSS2/JcsDSS2/'
+    location: 'http://10.140.221.229/snapshots/7f5bd245-5420-424f-8c4c-57199beef145/10.140.221.229/apt/JcsDSS2/JcsDSS2/'
     architecture: 'amd64'
     release: 'jiocloud'
     repos: 'main'
