@@ -74,6 +74,8 @@ ceph::radosgw::rgw_bucket_index_shards: 0
 ceph::radosgw::rgw_frontends: "civetweb port=7480"
 ceph::radosgw::rgw_cors_allowed_origin: "https://console.jiocloudservices.com, http://console.jiocloudservices.com, http://consolepreprod.jiocloudservices.com, https://consolepreprod.jiocloudservices.com, http://console.staging.jiocloudservices.com, https://console.staging.jiocloudservices.com, https://consolestaging.jiocloudservices.com, https://jio.digilocker.com, http://jio.digilocker.com, https://digilocker.jiocloudservices.com, http://digilocker.staging.jiocloudservices.com, https://digilocker.staging.jiocloudservices.com, http://jiolocker.jiocloudservices.com, https://jiolocker.jiocloudservices.com, http://jiolockerstaging.jiocloudservices.com, https://jiolockerstaging.jiocloudservices.com"
 ceph::radosgw::rgw_multipart_part_upload_limit: 2048 # 2048 parts * 5Gb per part = 10 Tb max object size
+ceph::radosgw::rgw_kms_encrypt_url: "https://10.140.222.36:8080/encrypt"
+ceph::radosgw::rgw_kms_decrypt_url: "https://10.140.222.36:8080/decrypt"
 ## OSD Config
 ceph::conf::debug_osd: 5
 ceph::conf::osd_op_threads: 4
@@ -196,7 +198,7 @@ rjil::system::apt::repositories:
       =mdmh
       -----END PGP PUBLIC KEY BLOCK-----
   dss-ceph:
-    location: 'http://10.140.221.229/snapshots/c603eba3-aadd-44da-8081-2ed3716c342b/10.140.221.229/apt/JcsDSS2/JcsDSS2/'
+    location: 'http://10.140.221.229/snapshots/54047075-4ca0-4a5b-b61f-500f0868271c/10.140.221.229/apt/JcsDSS2/JcsDSS2/'
     architecture: 'amd64'
     release: 'jiocloud'
     repos: 'main'
