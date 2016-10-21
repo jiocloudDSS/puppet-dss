@@ -27,7 +27,7 @@ mod 'saz/timezone',
 
 mod 'saz/rsyslog',
   :git => "#{base_url}/jioclouddss/puppet-rsyslog",
-  :ref => 'origin/master'
+  :ref => 'origin/production'
 
 mod 'puppetlabs/apt',
   :git => "#{base_url}/puppetlabs/puppetlabs-apt",
